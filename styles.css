@@ -283,7 +283,8 @@ button {
     white-space: inherit;
     line-height: 25px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
+    word-spacing: 2px;
     font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
@@ -306,7 +307,7 @@ button {
 
 .contacts .second-container form{
     background-color: black;
-    padding: 70px;
+    padding: 60px;
     padding-left: 50px;
     padding-top: 60px;
     padding-bottom: 1px;
@@ -374,8 +375,15 @@ button {
 }
 
 .footer .right-container p {
-    padding-top: 30px;
+    padding-top: 50px;
     font-weight: lighter;
+    font-size: 10pt;
+    line-height: 2px;
+    color: #dde6e5;
+}
+
+.footer .right-container span {
+    opacity: 50%;
     font-size: 10pt;
     color: #dde6e5;
 }
