@@ -166,7 +166,7 @@ button {
 
 .container p {
     font-family: 'Lato', sans-serif;
-    font-size: 11pt;
+    font-size: 12pt;
     font-weight: bold;
     text-align: center;
     line-height: 10pt;
@@ -182,38 +182,77 @@ button {
     padding-left: 100px;
     padding-right: 100px;
     margin-right: -15px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     background-color: black;
 }
 
-.row .column {
+.row .column-left {
     float: left;
     width: 100%;
-    padding-right: 50px;
+    padding-right: 10px;
+    padding-left: 200px;
+    height: 300px;
+    background-color: black;
+    color: white; 
+}
+
+.row .column-left h2 {
+    color: white;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 10px;
+    padding-top: 50px;
+    padding-left: 5px;
+    margin-left: -60px;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+.row .column-left p {
+    color: white;
+    padding-top: 30px;
+    margin-left: -50px;
+    text-align: left;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.row .column-right {
+    float: left;
+    width: 100%;
+    padding-right: 10px;
     padding-left: 200px;
     height: 300px;
     background-color: black;
     color: white;
-    
 }
 
-/* .bigtxt {
-    padding-top: 50px;
-    text-align: left;
-    font-size: 20pt;
-    font-family: Lato, Helvetica, sans-serif;
-    font-weight: 200; 
-}
-
-.smalltxt {
+.row .column-right h2 {
     color: white;
-    font-family: Lato, Helvetica, sans-serif;
-    font-weight: normal;
     text-align: left;
-    font-size: 11pt;
-    margin: 5px;
-    line-height: 200px;
-} */
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 10px;
+    padding-top: 50px;
+    padding-left: 5px;
+    margin-left: -110px;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+.row .column-right p {
+    color: white;
+    padding-top: 30px;
+    margin-left: -110px;
+    margin-right: 40px;
+    text-align: left;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+}
+
 
 .row .column h2 {
     padding-top: 50px;
@@ -250,8 +289,10 @@ button {
     display: flex;
     justify-content: center;
     background: #ffffff;
-    margin: 60px 0;
-    padding-left: 300px;
+    margin: 50px 0;
+    margin-right: 80px;
+    padding-right: -10px;
+    padding-left: 250px;
 }
 
 .contacts > * {
@@ -271,9 +312,9 @@ button {
     padding-top: 35px;
     padding-bottom: 5px;
     text-align: left;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 300;
-    font-family: Lato, Helvetica, sans-serif;
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
 .contacts .first-container p {
@@ -281,8 +322,8 @@ button {
     padding-bottom: 15px;
     text-align: left;
     white-space: inherit;
-    line-height: 25px;
-    font-size: 16px;
+    line-height: 26px;
+    font-size: 18px;
     font-weight: 600;
     word-spacing: 2px;
     font-family: Lato, Arial, Helvetica, sans-serif;
@@ -293,11 +334,11 @@ button {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    padding-left: 15px;
+    padding-bottom: 10px;
 }
 
 .contacts .second-container input {
-   width: 100%;
+   width: 500px;
    height: max-content;
    padding: 15px 30px;
    padding-left: 15px;
@@ -305,7 +346,7 @@ button {
    align-items: center;
 }
 
-.contacts .second-container form{
+.contacts .second-container form {
     background-color: black;
     padding: 60px;
     padding-left: 50px;
@@ -313,7 +354,7 @@ button {
     padding-bottom: 1px;
     margin-bottom: 90px;
     margin-right: 20pt;
-    margin-top: 20pt;
+    margin-top: 40pt;
 }
 
 .contacts .second-container h2 {
@@ -325,22 +366,61 @@ button {
     padding-bottom: 10px;
 }
 
-.contacts .second-container button {
-    height: 70px;
-    align-items: inherit;
-}
-
 .contacts .second-container h3 {
     color: white;
     font-weight: lighter;
     font-size: 20px;
     font-style: normal;
-    font-weight: lighter;
+    font-weight: normal;
     text-align: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: Lato, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Lato, Roboto, sans-serif;
 }
+
+.form-group {
+    background-color: black;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Lato, Roboto, sans-serif;
+}
+
+.form-group .code {
+    width: 10px;
+    padding-right: 120px;
+    height: max-content;
+    align-items: left;
+}
+
+.form-group .code input {
+    width: 110px;
+    font-family: Lato, Roboto, sans-serif;
+}
+
+.form-group .phone input {
+    width: 385px;
+    font-family: Lato, Roboto, sans-serif;
+}
+
+.form-group .phone {
+    height: max-content;
+    align-items: right;
+}
+
+.second-container .button {
+    align-items: left;
+    margin-left: -50px;
+    margin-top: -20px;
+}
+.contacts .second-container button {
+    height: 80px;
+    width: 250px;
+    align-items: left;
+    font-size: 20px;
+}
+
 
 .footer {
     background-color: #111111;
@@ -376,6 +456,7 @@ button {
 
 .footer .right-container p {
     padding-top: 50px;
+    padding-right: 25px;
     font-weight: lighter;
     font-size: 10pt;
     line-height: 2px;
@@ -383,7 +464,8 @@ button {
 }
 
 .footer .right-container span {
-    opacity: 50%;
+    opacity: 70%;
+    padding-right: 25px;
     font-size: 10pt;
     color: #dde6e5;
 }
