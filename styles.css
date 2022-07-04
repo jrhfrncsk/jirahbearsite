@@ -45,6 +45,7 @@ header {
 nav {
     background-color: #111111;
     padding-top: 20px;
+    padding-bottom: 5px;
     display: flex;
     align-items: center;
     width: auto;
@@ -116,6 +117,11 @@ button {
     border-radius: none;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    font-weight: bold;
+}
+
+button:hover {
+    color: lightblue;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 480px) {
@@ -125,8 +131,8 @@ button {
     }   
 }
 
-button:hover {
-    background-color: white (0,136,169,0.8);
+.button:hover {
+    background-color: red (0,136,169,0.8);
 }
 
 .box {
@@ -191,26 +197,27 @@ button {
 }
 
 .container {
+    padding-top: 25px;
+    padding-bottom: 50px;
     align-items: center;
     background-color: white;
-    padding-bottom: 3%;
 }
 
 .container h2 {
     text-align: center;
     padding: 40px;
     padding-bottom: 20px;
-    font-size: 30pt;
+    font-size: 35pt;
     font-family: Lato, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .container p {
     font-family: 'Lato', sans-serif;
-    font-size: 12pt;
-    font-weight: bold;
+    font-size: 14pt;
+    font-weight: 400;
     text-align: center;
-    line-height: 10pt;
+    line-height: 12pt;
     padding: 5px 15px;
     color: black;
     width:auto;
@@ -221,8 +228,9 @@ button {
     display: flex;
     padding-top: 30px;
     padding-left: 100px;
-    padding-right: 100px;
-    margin-right: -10px;
+    padding-right: 200px;
+    margin-right: -40px;
+    margin-left: -70px;
     padding-bottom: 100px;
     background-color: black;
 }
@@ -230,8 +238,9 @@ button {
 .row .column-left {
     float: left;
     width: 100%;
-    padding-right: 10px;
-    padding-left: 200px;
+    margin-left: 130px;
+    padding-right: 20px;
+    padding-left: 150px;
     height: 300px;
     background-color: black;
     color: white; 
@@ -240,7 +249,7 @@ button {
 .row .column-left h2 {
     color: white;
     text-align: left;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 300;
     line-height: 10px;
     padding-top: 50px;
@@ -257,14 +266,16 @@ button {
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 17px;
-    line-height: 30px;
+    word-spacing: 2px;
+    line-height: 31px;
 }
 
 .row .column-right {
     float: left;
     width: 100%;
-    padding-right: 10px;
-    padding-left: 200px;
+    margin-left: 40px;
+    padding-right: 20px;
+    padding-left: 150px;
     height: 300px;
     background-color: black;
     color: white;
@@ -273,12 +284,12 @@ button {
 .row .column-right h2 {
     color: white;
     text-align: left;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 300;
     line-height: 10px;
     padding-top: 50px;
     padding-left: 5px;
-    margin-left: -110px;
+    margin-left: -118px;
     font-family: Lato, Helvetica, sans-serif;
 }
 
@@ -291,7 +302,8 @@ button {
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 17px;
-    line-height: 30px;
+    word-spacing: 2px;
+    line-height: 31px;
 }
 
 
@@ -364,9 +376,9 @@ button {
     text-align: left;
     white-space: inherit;
     line-height: 26px;
-    font-size: 18px;
-    font-weight: 600;
-    word-spacing: 2px;
+    font-size: 17px;
+    font-weight: 500;
+    word-spacing: 3px;
     font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
@@ -426,6 +438,7 @@ button {
     font-size: 35px;
     font-weight: 500;
 }
+
 .form-group {
     background-color: black;
     width: 85%;
@@ -443,13 +456,22 @@ button {
     align-items: left;
 }
 
+.contacts .second-container input {
+    width: 600px;
+    height: max-content;
+    padding: 15px 30px;
+    padding-left: 15px;
+    margin: 5px 0;
+    align-items: center;
+}
+
 .form-group .code input {
     width: 110px;
     font-family: Lato, Roboto, sans-serif;
 }
 
 .form-group .phone input {
-    width: 385px;
+    width: 482px;
     font-family: Lato, Roboto, sans-serif;
 }
 
